@@ -8,7 +8,7 @@ netWork.axios = netWork.axios || axios.create({
 netWork.axios.interceptors.request.use(config => {
     return config;
 }, error => {
-    console.error(err)
+    console.error(error)
     return Promise.reject(error);
 });
 
